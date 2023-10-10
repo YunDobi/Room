@@ -11,14 +11,14 @@ export default class Experience {
       canvas: this.canvas,
       antialias: true
     })
-    renderer.outputEncoding = THREE.sRGBEncoding;
+    // renderer.outputEncoding = THREE.sRGBEncoding;
 
     let camera = new THREE.PerspectiveCamera(30, 1);
-    camera.position.set(0,1,20)
+    camera.position.set(0,1,15)
 
     scene.background = new THREE.Color('white');
     const light = new THREE.AmbientLight( 0xffffff ); // soft white light
-    light.position.set( 50, 50, 50 );
+    light.position.set( 5, 5, 50 );
     scene.add( light );
 
     let loader = new GLTFLoader();
