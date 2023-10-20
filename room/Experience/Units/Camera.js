@@ -20,7 +20,11 @@ export default class Camera {
       0.1,
       1000
     );
+
     this.scene.add(this.perspectiveCamera);
+    this.perspectiveCamera.position.z = 15;
+    this.perspectiveCamera.position.y = 2;
+    // this.scene.background = new THREE.Color('white');
   }
 
   createOrthographicCamera() {
@@ -50,6 +54,6 @@ export default class Camera {
   }
 
   update() {
-    
+
   }
 }

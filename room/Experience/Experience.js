@@ -5,6 +5,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import Camera from './Units/Camera';
 import Renderer from './Units/Renderer';
 import Time from './Units/Time';
+import World from './World/world';
 
 export default class Experience {
   static instance;
@@ -19,6 +20,7 @@ export default class Experience {
     this.camera = new Camera();
     this.renderer = new Renderer();
     this.time = new Time();
+    this.world = new World();
 
     this.time.on('update', () => {
       this.update();
