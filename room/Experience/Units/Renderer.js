@@ -18,7 +18,8 @@ console.log(this.camera, this.camera.perspectiveCamera)
       canvas: this.canvas,
       antialias: true
     })
-    this.renderer.outputEncoding = THREE.sRGBEncoding;
+    this.renderer.setSize(this.size.width, this.size.height)
+    // this.renderer.outputEncoding = THREE.sRGBEncoding;
   }
 
   resize() {
